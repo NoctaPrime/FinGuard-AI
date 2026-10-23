@@ -2,21 +2,21 @@
 FinGuard AI is a multi-agent compliance auditor (CrewAI + Streamlit) that eliminates LLM math hallucinations. Using a strict "Zero-Math Policy," it routes financial data through deterministic Python tools rather than LLM logic. It features a Gemini model cascade for high availability and a Human-in-the-Loop safety gate for enterprise reliability.
 
 
-## Setup Instructions
+## Setup Instructions & Evaluation Guide
 
-**Option 1: Running via Google Colab (Recommended)**
-* Open the `Ziro_Project_Final.ipynb` file directly in Google Colab.
-* Add your Gemini API Key to Colab's built-in Secrets manager (the key icon on the left sidebar) and name it `GOOGLE_API_KEY`.
-* Click **Runtime > Run all**. 
-* The final cell will generate a secure `ngrok` public web link. Click that link to open the Streamlit dashboard in your browser.
+**Option 1: Running via Google Colab (Recommended for Judges)**
+1. Open `Ziro_Project_Final.ipynb` in Google Colab.
+2. Click the **Key icon (Secrets)** on the left sidebar.
+3. Add a new secret named `GEMINI_API_KEY` and paste your Gemini API key. **Toggle "Notebook access" ON.**
+4. Add a second secret named `NGROK_AUTH_TOKEN` and paste your ngrok authtoken. **Toggle "Notebook access" ON.**
+5. Click **Runtime > Run all**. The final cell will generate a secure public web link to view the Streamlit dashboard.
 
 **Option 2: Running Locally**
-* Clone this repository to your local machine using `git clone https://github.com/NoctaPrime/FinGuard-AI.git`.
-* Navigate to the project directory in your terminal.
-* Install the necessary dependencies by running `pip install -r requirements.txt`.
-* Set your Google Gemini API key as a local environment variable.
-* Launch the interface by running `streamlit run ziro_project_final.py`.
-
+1. Clone this repository: `git clone https://github.com/NoctaPrime/FinGuard-AI.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Create a `.streamlit/secrets.toml` file in the project directory and add your Gemini API key:
+   `GEMINI_API_KEY = "your_api_key_here"`
+4. Run the application: `streamlit run ziro_project_final.py`
 ##
 
 Pitch Deck: https://docs.google.com/presentation/d/1OmNQmi5x92q43bGJYngnRQmZXNEOIJhM496E8ktj4co/edit?usp=sharing

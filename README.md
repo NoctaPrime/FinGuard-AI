@@ -21,4 +21,5 @@ FinGuard AI is a multi-agent compliance auditor (CrewAI + Streamlit) that elimin
 
 Pitch Deck: https://docs.google.com/presentation/d/1OmNQmi5x92q43bGJYngnRQmZXNEOIJhM496E8ktj4co/edit?usp=sharing
 
-Demo Video: https://drive.google.com/file/d/1T-mBseaC0F8I9ue1XA3ZgZMmJP5HPtWV/view?usp=sharing
+Demo Video: 
+https://drive.google.com/file/d/1T-mBseaC0F8I9ue1XA3ZgZMmJP5HPtWV/view?usp=sharing
